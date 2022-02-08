@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Libcord Reports Parser</title>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="main.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+	</head>
+
+	<body>
+		<section class="container my-4">
+			<h1 class="title">Libcord Reports Parser</h1>
+			<p>Copy and paste a report from Libcord in the space below.</p>
+		</section>
+		<section class="container">
+			<div class="columns">
+				<div class="column is-one-third">
+					<textarea
+						class="textarea"
+						id="report"
+						rows="20"
+						placeholder="[ONE] Fenda 1&#13;&#10;[TWO/THREE] Fenda 2&#13;&#10;[TWO] Fenda 3"
+					></textarea>
+				</div>
+				<div class="column is-one-third">
+					<div id="output"></div>
+				</div>
+				<div class="column is-one-third">
+					<div>
+						<canvas id="chart"></canvas>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
